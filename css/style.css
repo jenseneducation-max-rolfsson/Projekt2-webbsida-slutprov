@@ -28,17 +28,42 @@
 
 /* slut hem */
 /* tjänster */
+
 .tjanstercontainer{
     display: grid;
     max-width: auto;
     max-height: auto;
     grid-template-columns: repeat(1, auto);
-    grid-template-rows: repeat(4, auto);
+    grid-template-rows: repeat(3, auto);
     grid-template-areas: "nav"
-    "titel"
-    "tjänster"
+    "info"
     "footer";
 }
+
+.infotext {
+    display: flex;
+    flex-direction: column;
+    padding: 10% 20% 10% 20%;
+    grid-area: info;
+}
+
+.radgivning {
+
+}
+
+.datahantering {
+
+}
+
+.webbprojektledning {
+
+}
+
+.andratjanster {
+
+}
+
+/*slut tjänster */
 
 
 /* för header och footer */
