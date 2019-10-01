@@ -12,18 +12,25 @@
 }
 
 .hemheader {
-    max-width: auto;
-    max-height: auto;
-    grid-area: titel;
+    height: 600px;
+    width: 1092px;
+    background-image: url(../images/bakgrund.jpg);
+    background-repeat: no-repeat;
+
+}
+
+.hemheadertext {
     display: flex;
     justify-content: center;
+    margin-top: 260px;
+    color: pink;
 }
 
 .hemtjanster {
     display: flex;
     flex-direction: column;
     text-align: center;
-    padding: 10% 20% 10% 20%;
+    padding: 5% 20% 5% 20%;
 }
 
 /* slut hem */
@@ -64,8 +71,49 @@
 }
 
 /*slut tjänster */
+/* ommig */
 
+.ommigcontainer {
+    display: grid;
+    max-width: auto;
+    max-height: auto;
+    grid-template-columns: repeat(1, auto);
+    grid-template-rows: repeat(5, auto);
+    grid-template-areas: "nav"
+    "profilbild"
+    "omheader"
+    "omtext"
+    "footer";
+}
 
+.profilbild {
+    height: 200px;
+    width: 200px;
+    background-image: url(../images/profil.jpg);
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3%;
+
+}
+
+.omheader {
+    grid-area: omheader;
+    text-align: center;
+    padding-top: 5%;
+
+}
+
+.omtext {
+    display: flex;
+    flex-direction: column;
+    padding: 3% 20% 10% 20%;
+    grid-area: omtext;
+}
+
+/* slut ommig */
 /* för header och footer */
 
 .nav {
@@ -97,6 +145,7 @@ h2 {
     align-items: center;
     grid-area: footer;
     background: black;
+    height: 50px;
 }
 
 .footer a {
