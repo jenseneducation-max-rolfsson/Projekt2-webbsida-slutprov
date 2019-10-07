@@ -1,3 +1,36 @@
+*{
+    box-sizing: border-box;
+}
+
+/* Text styling */
+p {
+    font-family: 'Rubik', sans-serif;
+}
+
+h2 {
+    font-family: 'Rubik', sans-serif;
+    font-size: 16px;
+}
+
+h3 {
+    font-family: 'Rubik', sans-serif;
+}
+
+nav a {
+    font-family: 'Rubik', sans-serif;
+    font-size: 10px;
+}
+
+h1 {
+    font-family: 'Turret Road', cursive;
+    font-size: 30px;
+}
+
+h5 {
+    font-family: 'Rubik', sans-serif;
+    font-size: 32px;
+}
+/* slut text styling */
 /* hem */
 .hemcontainer{
     display: grid;
@@ -12,18 +45,18 @@
 }
 
 .hemheader {
-    height: 600px;
-    width: 1092px;
+    height: 400px;
+    width: 100%;
     background-image: url(../images/bakgrund.jpg);
     background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
 }
 
 .hemheadertext {
-    display: flex;
-    justify-content: center;
-    margin-top: 260px;
-    color: pink;
+    color: white;
 }
 
 .hemtjanster {
@@ -50,40 +83,62 @@
 .infotext {
     display: flex;
     flex-direction: column;
-    padding: 10% 20% 10% 20%;
+    padding: 0% 20% 0% 20%;
     grid-area: info;
 }
 
-.radgivning {
-
+.kontaktcontainer {
+    display: flex;
+    flex-direction: column;
+    padding: 5% 20% 5% 20%;
 }
 
-.datahantering {
-
+.telefonbild {
+    height: 30px;
+    width: 30px;
+    background-image: url(../images/telefon.png);
+    background-repeat: no-repeat;
+    position: relative;
+    top: 40px;
+    right: 50px;
+    border-radius: 5%;
 }
 
-.webbprojektledning {
-
+.mailbild {
+    height: 35px;
+    width: 35px;
+    background-image: url(../images/mail.png);
+    background-repeat: no-repeat;
+    position: relative;
+    top: 40px;
+    right: 50px;
 }
 
-.andratjanster {
-
+.linkedinbild {
+    height: 30px;
+    width: 30px;
+    background-image: url(../images/linkedin.png);
+    background-repeat: no-repeat;
+    position: relative;
+    top: 40px;
+    right: 50px;
+    border-radius: 5%;
 }
 
 /*slut tjänster */
 /* ommig */
 
 .ommigcontainer {
-    display: grid;
+    /* display: grid; */
     max-width: auto;
     max-height: auto;
-    grid-template-columns: repeat(1, auto);
+/*     grid-template-columns: repeat(1, auto);
     grid-template-rows: repeat(5, auto);
     grid-template-areas: "nav"
     "profilbild"
     "omheader"
     "omtext"
-    "footer";
+    "footer"; */
 }
 
 .profilbild {
@@ -102,14 +157,14 @@
 .omheader {
     grid-area: omheader;
     text-align: center;
-    padding-top: 5%;
+    padding: 0% 20% 0% 20%;
 
 }
 
 .omtext {
     display: flex;
     flex-direction: column;
-    padding: 3% 20% 10% 20%;
+    padding: 0% 20% 5% 20%;
     grid-area: omtext;
 }
 
@@ -124,6 +179,8 @@
     background: black;
     align-items: center;
     grid-area: nav;
+    margin: 0;
+    padding: 0;
 }
 
 .nav a {
@@ -146,6 +203,8 @@ h2 {
     grid-area: footer;
     background: black;
     height: 50px;
+    margin: 0;
+    padding: 0;
 }
 
 .footer a {
@@ -154,3 +213,19 @@ h2 {
 }
 
 /* SLUT för header och footer */
+
+@media only screen and (min-width: 600px) {
+    body {
+      background-color: gray;
+    }
+    h1 {
+        font-size: 40px;
+    }
+    h2 {
+        font-size: 26px;
+    }
+    .nav a {
+        font-size: 18px;
+    }   
+    
+  }
