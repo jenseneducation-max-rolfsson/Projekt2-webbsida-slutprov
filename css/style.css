@@ -5,6 +5,7 @@
 /* Text styling */
 p {
     font-family: 'Rubik', sans-serif;
+    letter-spacing: 1px;
 }
 
 h2 {
@@ -52,6 +53,7 @@ h5 {
     display: flex;
     justify-content: center;
     align-items: center;
+    box-shadow: 8px 8px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
 }
 
@@ -181,11 +183,13 @@ h5 {
     grid-area: nav;
     margin: 0;
     padding: 0;
+    border-radius: 0.2rem;
 }
 
 .nav a {
     text-decoration: none;
     color: white;
+    display: block;
 }
 
 a:hover {
@@ -205,6 +209,7 @@ h2 {
     height: 50px;
     margin: 0;
     padding: 0;
+    border-radius: 0.2rem;
 }
 
 .footer a {
@@ -215,9 +220,6 @@ h2 {
 /* SLUT för header och footer */
 
 @media only screen and (min-width: 600px) {
-    body {
-      background-color: gray;
-    }
     h1 {
         font-size: 40px;
     }
